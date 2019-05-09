@@ -1,2 +1,2 @@
-# front-end-practice
-# this file is used to list some of my work about front-end.
+# front-end-practice-works
+these are some of my works during the front-end learning period.
