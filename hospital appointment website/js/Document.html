@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!-- saved from url=(0140)file:///Users/jzj/Desktop/%E6%85%95%E8%AF%BE%E7%BD%91%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/ES6%E4%BD%9C%E4%B8%9A/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+  <title>Document</title>
+  <link rel="stylesheet" href="file:///Users/jzj/Desktop/%E6%85%95%E8%AF%BE%E7%BD%91%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/ES6%E4%BD%9C%E4%B8%9A/css/index.css">
+</head>
+<body>
+	<div id="wrap">
+    <div class="container">
+      <div class="title">自定义select</div>
+      <div class="search-box clear">
+          <!-- <input type="text" > -->
+          <p class="search-result">Webpack</p>
+          <div class="dropdown-arrow"><img src="file:///Users/jzj/Desktop/%E6%85%95%E8%AF%BE%E7%BD%91%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/ES6%E4%BD%9C%E4%B8%9A/img/xialajiantou.png"></div>
+      </div>
+      <div class="dropdown" data-active="show" style="display: block;">
+          <input class="dropdown-input" type="text" placeholder="搜索">
+          <select id="demo" size="8" class="dropdown-list"><option class="dropdown-type" value="type" disabled="">构建工具</option><option class="dropdown-item" value="1" type="构建工具">Babel</option><option class="dropdown-item" value="2" type="构建工具">Webpack</option><option class="dropdown-item" value="3" type="构建工具">Rollup</option><option class="dropdown-type" value="type" disabled="">前端框架</option><option class="dropdown-item" value="4" type="前端框架">Vue</option><option class="dropdown-item" value="5" type="前端框架">Angular</option><option class="dropdown-item" value="6" type="前端框架">React</option><option class="dropdown-item" value="7" type="前端框架">Nerv</option></select>
+      </div>
+    </div>
+    <div class="output">
+      <p class="content" id="out">之前的值是 Babel - 1<br>改变后的值是 Webpack - 2</p>
+    </div>
+
+  
+    <div style="text-align: center;margin-top: 60px;">
+      <div class="title">原生select</div>
+      <select>
+        <option value="1" type="构建工具">Babel</option>
+        <option value="2" type="构建工具">Webpack</option>
+        <option value="3" type="构建工具">Rollup</option>
+        <option value="4" type="前端框架">Vue</option>
+        <option value="5" type="前端框架">Angular</option>
+        <option value="6" type="前端框架">React</option>
+        <option value="7" type="前端框架">Nerv</option>
+      </select>
+    </div>
+  </div>
+  <script src="file:///Users/jzj/Desktop/%E6%85%95%E8%AF%BE%E7%BD%91%E5%89%8D%E7%AB%AF%E8%AF%BE%E7%A8%8B%E4%BD%9C%E4%B8%9A/ES6%E4%BD%9C%E4%B8%9A/js/index.js"></script>
+  <script>
+    // console.log(window.$Search);
+    const search = new $Search("#wrap");
+  </script>
+
+</body></html>
