@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+	<div id="wrap">
+    <!-- 自定义搜索组件 -->
+    <div class="container">
+      <div class="title">自定义select</div>
+      <div class="search-box clear">
+          <!-- <input type="text" > -->
+          <p class="search-result">未选择</p>
+          <div class="dropdown-arrow"><img src="./img/xialajiantou.png"></div>
+      </div>
+      <div class="dropdown">
+          <input class="dropdown-input" type="text" placeholder="搜索">
+          <select id="demo" size="8" class="dropdown-list">
+            <!-- <option class="dropdown-type" value="type" disabled>构建工具</option> -->
+            <option class="dropdown-item" value="1" type="构建工具">Babel</option>
+            <option class="dropdown-item" value="2" type="构建工具">Webpack</option>
+            <option class="dropdown-item" value="3" type="构建工具">Rollup</option>
+            <!-- <option class="dropdown-type" value="type" disabled>前端框架</option> -->
+            <option class="dropdown-item" value="4" type="前端框架">Vue</option>
+            <option class="dropdown-item" value="5" type="前端框架">Angular</option>
+            <option class="dropdown-item" value="6" type="前端框架">React</option>
+            <option class="dropdown-item" value="7" type="前端框架">Nerv</option>
+          </select>
+      </div>
+    </div>
+    <div class="output">
+      <p class="content" id="out"></p>
+    </div>
+
+  
+    <div style="text-align: center;margin-top: 60px;">
+      <div class="title">原生select</div>
+      <select>
+        <option value="1" type="构建工具">Babel</option>
+        <option value="2" type="构建工具">Webpack</option>
+        <option value="3" type="构建工具">Rollup</option>
+        <option value="4" type="前端框架">Vue</option>
+        <option value="5" type="前端框架">Angular</option>
+        <option value="6" type="前端框架">React</option>
+        <option value="7" type="前端框架">Nerv</option>
+      </select>
+    </div>
+  </div>
+  
+  <script src="./js/index.js"></script>
+  <script>
+    // console.log(window.$Search);
+    const search = new $Search("#wrap");
+  </script>
+</body>
+</html>

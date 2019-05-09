@@ -1,0 +1,134 @@
+/* 初始化格式 */
+select,img,p,div{
+    padding: 0;
+    margin: 0;
+}
+/* 清除浮动 */
+.clear::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+/* 搜索组件 */
+.container{
+    width: 357px;
+    margin: 0 auto;
+    padding-top: 100px;
+    position: relative;
+}
+.title{
+    color: lightskyblue;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+}
+.search-box{
+    width: 357px;
+    margin: 0 auto;
+}
+.search-result{
+    display: block;
+    text-indent: 10px;
+    float: left;
+    width: 298px;
+    height: 34px;
+    line-height: 34px;
+    border: 2px solid lightblue;
+    border-right: none;
+    outline: none;
+    cursor: pointer;
+}
+.dropdown-arrow{
+    float: left;
+    width: 55px;
+    height: 38px;
+    background-color: skyblue;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.dropdown-arrow img{
+    height: 12px;
+    width: 12px;
+    margin-top: 14px;
+}
+/* 下拉搜索框与选项菜单 */
+.dropdown{
+    position: absolute;
+    left: 0;
+    top:158px;
+    z-index: 2;
+    display: none;
+    width: 353px;
+    height: 200px;
+    border: 1px lightblue solid;
+    border-top: 0;
+    padding-top: 5px;
+    margin-top: 0;
+    background: #fff;
+    overflow: scroll;
+}
+.dropdown-input{
+    display: block;
+    width: 337px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: none;
+    text-shadow: none;
+    border: 1px rgba(163, 162, 162) solid;
+    margin: 5px 5px 5px 5px;
+}
+.dropdown-list{
+    display: block;
+    opacity: 1;
+    width: 100%;
+    height: 130px;
+    outline: none;
+    border: none;
+    appearance: none;
+    text-indent:  5px;
+    transition: all .1s;
+    
+}
+.dropdown-list .dropdown-type{
+    color: #000;
+    font-family: "Microsoft YaHei";
+    font-size: 24px;
+    font-weight: bold;
+}
+.dropdown-list .dropdown-item{
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    text-indent: 10px;
+    font-size: 16px;
+    appearance: none;
+    background-color: #fff;
+    color: #000;
+    transition: all .5s;
+    display: block;
+    padding: 5px;
+}
+.dropdown-list .dropdown-item:hover{
+    background-color: rgb(160, 157, 157);
+}
+/* 输出结果部分 */
+.output{
+    width: 357px;
+    margin: 30px auto;
+}
+.output .content{
+    text-align: center;
+}
+.output p::selection{
+    background: lightblue;
+    color: #fff;
+}
+
+/* .dropdown .dropdown-list::selection{
+    background-color: skyblue;
+    color: #fff;
+} */
